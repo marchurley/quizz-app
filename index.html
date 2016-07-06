@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Quizz App</title>
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+	</head>
+	<body>
+		<div class="gameScreen">
+			<p class="round"></p>
+			<p id="question">Question</p>
+			<div class="multipleChoice">
+				<input type="submit" id="choice1">
+				<br>
+				<input type="submit" id="choice2">
+				<br>
+				<input type="submit" id="choice3">
+				<br>
+				<input type="submit" id="choice4">
+			</div>
+			<div class="answer"></div>
+			<button class="btnContinue">Continue</button>
+			<p class="score"></p>
+		</div>
+
+		<div class="endScreen">
+			<p>The game is finished</p>
+			<p class="finalResult"></p>
+			<button class="btnNewGame">New Game</button>
+		</div>
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>
