@@ -101,6 +101,7 @@ $(document).ready(function(){
       nextGame++;
       if (userAnswer == questionArray[thisGame].correct) {
           $(".answer").text("That is correct: " + questionArray[thisGame].answerText).css("background-color", "rgba(4, 204, 174, 0.63)").show();
+          $(".btnContainer").show();
           $(".btnContinue").show();
           $("input[type=submit]").prop("disabled", true);
           score++;
@@ -110,6 +111,7 @@ $(document).ready(function(){
           thisGame++;
       } else {
           $(".answer").text("That is not correct: " + questionArray[thisGame].answerText).css("background-color", "rgba(230, 63, 63, 0.37)").show();
+          $(".btnContainer").show();
           $(".btnContinue").show(); 
           $("input[type=submit]").prop("disabled", true);
           $(".score").text(score + " point(s)");
@@ -127,7 +129,6 @@ $(document).ready(function(){
       thisGame = 0;
       round = 1;
       score = 0;
-      $(".btnContinue").hide();
       $("#question").text(Question0.question);
       $("#choice1").prop('value', Question0.choice1);
       $("#choice2").prop('value', Question0.choice2);
