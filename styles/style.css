@@ -84,10 +84,6 @@ input:hover {
 	background-color: rgb(86,204,186);
 }
 
-#choice4 {
-	margin-right: 12px;
-}
-
 .btnContinue {
 	display: block;
 	background-color: rgb(255, 234, 159);
@@ -161,7 +157,6 @@ button:hover span:after {
 
 
 .multipleChoice {
-	margin-top: 2em;
 	margin: auto;
 	text-align: center;
 }
