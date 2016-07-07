@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Quizz App</title>
+		<title>Wine Quizz App</title>
 		<!-- Meta Tags -->
 		<meta charset="utf-8"/>
+		
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="styles/reset.css">
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+		<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+
 		<link rel="stylesheet" href="styles/style.css"/> 
+	
 	</head>
+
 	<body>
-		<div class="gameScreen">
+		<!--Header -->
+		<header>
+			<p class="mainScore">Score: <span class="score"></span></p>
 			<p class="round"></p>
-			<p id="question">Question</p>
-			<div class="multipleChoice">
-				<input type="submit" id="choice1">
-				<br>
-				<input type="submit" id="choice2">
-				<br>
-				<input type="submit" id="choice3">
-				<br>
-				<input type="submit" id="choice4">
-			</div>
-			<div class="answer"></div>
-			<button class="btnContinue">Continue</button>
-			<p class="score"></p>
+		</header>
+
+		<!-- Titel -->
+		<div class="title">
+			<h1>Italian Wine Quizz</h1>
 		</div>
 
-		<div class="endScreen">
-			<p>The game is finished</p>
-			<p class="finalResult"></p>
-			<button class="btnNewGame">New Game</button>
-		</div>
+		<!-- Main Screen -->
+		<div class="mainScreen">
+			
+			<!-- Game Screen -->
+			<div class="gameScreen">
+				
+				<!-- Question -->
+				<div class="questionContainer">
+					<p id="question">Question</p>
+				</div>
+				
+				<!-- Multiple Choice Answer -->	
+				<div class="multipleChoice">
+					<input type="submit" id="choice1">
+					<br>
+					<input type="submit" id="choice2">
+					<br>
+					<input type="submit" id="choice3">
+					<br>
+					<input type="submit" id="choice4">
+				</div>
+
+			</div> <!-- FINISH GAME SCREEN -->
+			
+			<!-- Continue Button -->
+			<div class="btnContainer">
+				<button class="btnContinue"><span>Continue</span></button>
+			</div> <!-- FINISH CONTINUE BUTTON -->
+			
+			<!-- End Screen with Score -->
+			<div class="endScreen">
+				
+				<!-- Congratulation -->
+				<div class="congrats">
+					<h2>Congratulations</h2>
+				</div>				
+				
+				<br>
+				
+				<!-- Final Result -->
+				<p class="finalResult"></p>
+				
+				<!-- New Game Button-->
+				<button class="btnNewGame"><span>New Game</span></button>
+
+			</div> <!-- FINISH END SCREEN -->
+
+		</div> <!-- FINISH MAIN SCREEN -->
+
+		<!-- Answer Box -->
+		<div class="answer"></div>
+
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
-	</body>
+
+	</body> 
+
 </html>

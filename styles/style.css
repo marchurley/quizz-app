@@ -1,0 +1,212 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+html {
+	width: 100%;
+	height: 100%;
+	min-height: 850px;
+	background-color: rgb(58, 22, 59);
+}
+
+
+body {
+	position: relative;
+	width: 96%;
+	height: 96%;
+	margin: 1em auto;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	background-color: rgb(33, 4, 33);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	font-size: 1.2em;
+}
+
+/*---------------------------------------------------------------------------------
+   Header Styles
+---------------------------------------------------------------------------------*/
+
+.mainScore {
+	float: left;
+	margin: 1em 0 0 1em;
+
+}
+
+.round {
+	float: right;
+	margin: 1em 1em 0 0;
+}
+
+/*---------------------------------------------------------------------------------
+   Title Styles
+---------------------------------------------------------------------------------*/
+.title {
+	font-size: 2.5em;
+	text-align: center;
+	padding-bottom: 1em;
+	font-family: 'Rock Salt', cursive;
+	clear: both;
+}
+
+
+/*---------------------------------------------------------------------------------
+   Button Styles
+---------------------------------------------------------------------------------*/
+
+input, button {
+	width: 200px;
+	margin: 0.5em;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.9em;
+	border-radius: 4px;
+	padding: 0.3em;
+	background-color: rgb(255, 210, 255);
+	border: none;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	cursor: pointer;
+	font-weight: 600;
+	-webkit-font-smoothing: antialiased;
+	font: rgb(33, 4, 33);
+	padding-top: 0.5em;
+	margin-top: 0.9em;
+	margin-left: 12px;
+}
+
+#choice1 {
+	margin-top: 1.5em;
+}
+
+input:hover {
+	background-color: rgb(86,204,186);
+}
+
+#choice4 {
+	margin-right: 12px;
+}
+
+.btnContinue {
+	display: block;
+	background-color: rgb(255, 234, 159);
+	margin: 0 auto;
+	width: 100%;
+	padding: 1em;
+}
+
+.btnContainer {
+	margin: 1em auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 15px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*---------------------------------------------------------------------------------
+   Main Screen Styles
+---------------------------------------------------------------------------------*/
+.mainScreen {
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	height: 450px;
+	background-color: rgb(153,80,153);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.questionContainer {
+	height: 135px;
+	margin: auto;
+	text-align: center;
+	background-color: rgba(58,22,59,0.6);
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+#question {
+	padding: 1em 0.5em;
+	font-size: 1.2em;
+}
+
+
+.multipleChoice {
+	margin-top: 2em;
+	margin: auto;
+	text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------
+   Answer Styles
+---------------------------------------------------------------------------------*/
+.answer {
+	position: relative;
+	width: 50%;
+	margin: 2em auto;
+	padding: 1em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	text-align: center;
+}
+
+
+/*---------------------------------------------------------------------------------
+   End Screen Styles
+---------------------------------------------------------------------------------*/
+
+
+.endScreen {
+	text-align: center;
+	margin: 1em;
+	padding-top: 1em;
+}
+
+
+h2 {
+	font-size: 2em;
+}
+
+.finalResult {
+	margin: 1em auto;
+	font-size: 1.3em;
+}
+
+.btnNewGame {
+	padding: 1.2em;
+	font-size: 1.5em;
+}
+
+.btnNewGame:hover {
+	background-color: rgb(255, 234, 159);
+}
